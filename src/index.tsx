@@ -1,16 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ReactDOM from 'react-dom'
+import { Provider } from '../node_modules/react-redux/es/exports'
+import { BrowserRouter, Route, Routes } from '../node_modules/react-router-dom/index'
+import './index.scss'
+import Page404 from './pages/Page404'
 import { PageListOfUsers } from './pages/PageListOfUsers'
 import PageUserProfile from './pages/PageUserProfile'
-import { Provider } from 'react-redux'
 import { store } from './redux/store'
-import Page404 from './pages/Page404'
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
-root.render(
+ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
             <BrowserRouter>
@@ -21,5 +19,6 @@ root.render(
                 </Routes>
             </BrowserRouter>
         </Provider>
-    </React.StrictMode>
+    </React.StrictMode>,
+    document.querySelector('#root')
 )
