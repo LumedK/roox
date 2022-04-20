@@ -1,0 +1,25 @@
+.user-card {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    background: #f3f3f3;
+    border-radius: 8px;
+    font-size: 11px;
+
+    .field {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        flex: 50.5%;
+
+        .title {
+            color: #a3a3a3;
+            padding-right: 7px;
+        }
+    }
+
+    .link {
+        cursor: pointer;
+        color: #4b51ef;
+    }
+}

@@ -1,0 +1,40 @@
+.user-profile {
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .title {
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 20px 12px;
+            border: 1px solid #f3f3f3;
+            border-radius: 8px;
+            margin: 10px 0;
+
+            .required-fields label {
+                margin-bottom: 10px;
+                width: 50%;
+            }
+        }
+        .btn-submit {
+            align-self: flex-end;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+        }
+    }
+}

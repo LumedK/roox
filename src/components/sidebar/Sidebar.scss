@@ -1,0 +1,17 @@
+.sidebar {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+    width: 180px;
+    background-color: #e5e5e5;
+    padding: 35px 20px;
+
+    & > * {
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+}

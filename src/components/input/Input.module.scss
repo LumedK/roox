@@ -1,0 +1,27 @@
+.input {
+    display: flex;
+    flex-flow: column nowrap;
+
+    .input-element {
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #d8d8d8;
+        outline: none;
+        resize: vertical;
+
+        &:focus {
+            $color: #646464;
+            border-color: $color;
+        }
+
+        &:invalid {
+            $color: rgba(217, 19, 19, 1);
+            border-color: $color;
+        }
+    }
+
+    span {
+        margin-bottom: 3px;
+        font-size: 10px;
+    }
+}
